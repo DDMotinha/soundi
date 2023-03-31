@@ -110,3 +110,8 @@ body {
     max-width: 100%; /* ajuste conforme necessário */
     max-height: 100px;
   }
+
+
+  span {
+    color: #000;
+  }

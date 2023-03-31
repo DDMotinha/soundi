@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
 
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
     <link rel="stylesheet" href="./static/styles/style.css">
     <script src="./static/javascript/index.controller.js"></script>
 </head>
@@ -33,6 +36,62 @@
         </a>
     </header>
     <h3>Soundi, festas por gênero musical</h3>
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+        <div class="py-5">
+            <div class="d-grid gap-2 d-flex justify-content-center align-content-center">
+                <div>
+                    <label for="generoA">
+                        GeneroA
+                    </label>
+                    <select id="generoA">
+                        <option value="null">
+                            Selecione
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="generoB">
+                        GeneroB
+                    </label>
+                    <select id="generoB">
+                        <option value="null">
+                            Selecione
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="generoC">
+                        GeneroC
+                    </label>
+                    <select id="generoC">
+                        <option value="null">
+                            Selecione
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="generoD">
+                        GeneroD
+                    </label>
+                    <select id="generoD">
+                        <option value="null">
+                            Selecione
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="cidade">
+                        Cidade
+                    </label>
+                    <select id="cidade">
+                        <option value="null">
+                            Selecione
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
     <table class="redimentionTable table table-dark table-hover">
         <thead>
             <tr>

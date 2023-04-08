@@ -32,57 +32,23 @@ async function populaSelects(json) {
     for (let index = 0; index < json.length; index++) {
         const element = json[index];
         generoAPrompt.push(element.GeneroA)
-        generoBPrompt.push(element.GeneroB)
-        generoCPrompt.push(element.GeneroC)
-        generoDPrompt.push(element.GeneroD)
+        generoAPrompt.push(element.GeneroB)
+        generoAPrompt.push(element.GeneroC)
+        generoAPrompt.push(element.GeneroD)
         cidadePrompt.push(element.CidadeFesta)
     }
 
     generoAPrompt = [...new Set(generoAPrompt)].sort()
-    generoBPrompt = [...new Set(generoBPrompt)].sort()
-    generoCPrompt = [...new Set(generoCPrompt)].sort()
-    generoDPrompt = [...new Set(generoDPrompt)].sort()
     cidadePrompt = [...new Set(cidadePrompt)].sort()
 
     generoAPrompt.forEach((element)=>{
         $('#generoA').append(`<option value="${element}">${element}</option>`)
-    })
-    generoBPrompt.forEach((element)=>{
-        $('#generoB').append(`<option value="${element}">${element}</option>`)
-    })
-    generoCPrompt.forEach((element)=>{
-        $('#generoC').append(`<option value="${element}">${element}</option>`)
-    })
-    generoDPrompt.forEach((element)=>{
-        $('#generoD').append(`<option value="${element}">${element}</option>`)
     })
     cidadePrompt.forEach((element)=>{
         $('#cidade').append(`<option value="${element}">${element}</option>`)
     })
 }
 
-$('#generoA').on( function(evt){
-    const select = document.getElementById('generoA')
-    const tbody = document.getElementById("populationTable");
-    const rows = tbody.querySelectorAll("tr");
-    rows.forEach((row, index) => {
-      if (select.value === "all") {
-        row.style.display = "";
-      } else if (select.value === "even") {
-        if (index % 2 === 0) {
-          row.style.display = "";
-        } else {
-          row.style.display = "none";
-        }
-      } else if (select.value === "odd") {
-        if (index % 2 === 1) {
-          row.style.display = "";
-        } else {
-          row.style.display = "none";
-        }
-      }
-    });
-})
 
 async function populationTableParties() {
     const festas = await fetchFestas()

@@ -4,7 +4,7 @@ const path = require('path')
 function csvToJson() {
         const file = fs.readFileSync(path.join(__dirname,'../files/DataBaseFestas.csv'), 'utf-8')
         const lines = file.split('\r\n');
-        const headers = lines[0].split(',');
+        const headers = lines[0].split(';');
         const result = [];
         for (let i = 1; i < lines.length; i++) {
           const values = lines[i].split(',');

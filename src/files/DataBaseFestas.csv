@@ -1,6 +1,6 @@
-NomeDaFesta,LinkDaFesta,GeneroA,GeneroB,GeneroC,GeneroD,DataFesta,EstadoFesta,CidadeFesta
-Delirio,https://shotgun.live/pt-br/events/delirio-o-baile,Funk,Brazilian,Afrobeat,Hardgroove,10/03/23,SP,Sao Paulo
-Beyhive,https://shotgun.live/events/beyhivepartybr-club-renaissance-open-bar-sao-paulo,Pop,R&B,,,10/03/23,SP,Sao Paulo
-Kindness,https://shotgun.live/events/bute-10-03-kindness,Disco,House,Acid House,,10/03/23,SP,Sao Paulo
-Cachorrada,https://shotgun.live/events/cachorrada-avulsa,Darkwave,EBM,Electro,Techno,10/03/23,SP,Sao Paulo
-Sub37,https://shotgun.live/events/sub-37-apresenta-latex,Electro,D&B,Acid House,Techno,10/03/23,SP,Sao Paulo
+NomeDaFesta;LinkDaFesta;GeneroA;GeneroB;GeneroC;GeneroD;DataFesta;EstadoFesta;CidadeFesta
+Delirio;https://shotgun.live/pt-br/events/delirio-o-baile;Funk;Brazilian;Afrobeat;Hardgroove;10/03/2023;SP;Sao Paulo
+Beyhive;https://shotgun.live/events/beyhivepartybr-club-renaissance-open-bar-sao-paulo;Pop;R&B;;;10/03/2023;SP;Sao Paulo
+Beyhive2;https://shotgun.live/events/beyhivepartybr-club-renaissance-open-bar-sao-paulo;Country;R&B;;;10/03/2023;SP;Sao Paulo
+;;;;;;;;
+;;;;;;;;
